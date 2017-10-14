@@ -3,12 +3,12 @@ import {
     AppRegistry,
     View
 } from 'react-native';
-import { SideMenu } from "./Router"
+import LoginPokemon from './pokemon/login/LoginPokemon';
 
 class App extends Component {
     render() {
         return(
-            <SideMenu/>
+            <LoginPokemon/>
         )
     }
     
