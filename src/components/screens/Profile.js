@@ -8,7 +8,7 @@ export default class Menu extends Component {
     render() {
         return(
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                <Text> Menu </Text>
+                <Text> {this.props.navigation.state.params.username} - {this.props.navigation.state.params.password} </Text>
 
             </View>
         )

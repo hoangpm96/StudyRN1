@@ -3,6 +3,7 @@ import Home from './screens/Home';
 import Menu from './screens/Menu';
 import User from './screens/User';
 import Details from './screens/Details';
+import Profile from './screens/Profile';
 import { StackNavigator,
         TabNavigator,
         DrawerNavigator
@@ -21,6 +22,12 @@ export const HomeStack = StackNavigator({
             title: 'Chi tiết'
         }
     },
+    ManHinh_Profile: {
+        screen: Profile,
+        navigationOptions: {
+            title: 'Profile'
+        }
+    }
 })
 export const UserStack = StackNavigator({
     Screen_User: {

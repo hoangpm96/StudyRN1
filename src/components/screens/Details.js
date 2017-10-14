@@ -19,7 +19,14 @@ export default class Details extends Component {
                 </TouchableOpacity>
                 <Text>
                         {this.props.navigation.state.params.thamso}
+                </Text>
+                <TouchableOpacity style={{backgroundColor: 'red'}}
+                    onPress={()=> {this.props.navigation.navigate('DrawerOpen')}}
+                >
+                    <Text style={{ color: '#ffff', fontSize: 20, padding: 10}}>
+                        Go to Menu
                     </Text>
+                </TouchableOpacity>
             </View>
         )
     }
